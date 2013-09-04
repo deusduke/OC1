@@ -1,6 +1,7 @@
 //
 //  OCAppDelegate.m
-//  OC1
+//  OC1 - 1309
+//  Project 1
 //
 //  Created by Deus Duke on 9/3/13.
 //  Copyright (c) 2013 DEUS Enterprises. All rights reserved.
@@ -20,6 +21,52 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    float fTest = 1.5f;
+    int iTest = 3;
+    bool bTest = NO;
+    int years = 5;
+    int whileCounter = 0;
+    
+    NSLog(@"float var: %f", fTest);
+    NSLog(@"float cast int: %i", (int)fTest);
+    
+    if ((fTest > 0 && iTest > 1) || !bTest)
+    {
+        NSLog(@"Crazy if statement works!!!");
+    }
+    
+    if (years <= 1)
+    {
+        NSLog(@"I am a Freshman");
+    }
+    else if (years == 2)
+    {
+        NSLog(@"I am a Sophmore");
+    }
+    else if (years == 3)
+    {
+        NSLog(@"I am a Junior");
+    }
+    else
+    {
+        NSLog(@"I am a Senior");
+    }
+    
+    for (int singleForIndex = 0; singleForIndex < 10; ++singleForIndex) {
+        NSLog(@"Single for loop index is: %d", singleForIndex);
+    }
+    
+    for (int nestedForOuterIndex = 0; nestedForOuterIndex < 3; ++nestedForOuterIndex) {
+        for (int nestedForInnerIndex = 0; nestedForInnerIndex < 3; ++nestedForInnerIndex) {
+            NSLog(@"Nested for %d:%d", nestedForOuterIndex, nestedForInnerIndex);
+        }
+    }
+    
+    while (whileCounter < 10) {
+        NSLog(@"While counter value is: %d", whileCounter++);
+    }
+    
     return YES;
 }
 
