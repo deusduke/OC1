@@ -22,12 +22,14 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    // variable declerations
     float fTest = 1.5f;
     int iTest = 3;
     bool bTest = NO;
     int years = 5;
     int whileCounter = 0;
     
+    // float and int logs
     NSLog(@"float var: %f", fTest);
     NSLog(@"float cast int: %i", (int)fTest);
     
