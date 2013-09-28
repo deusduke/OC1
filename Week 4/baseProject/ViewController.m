@@ -71,7 +71,7 @@
 {
     UIAlertView *dateAlert = [[UIAlertView alloc] init];
     NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"MMMM dd, yyyy HH:mm:ss zzzz"];
+    [formatter setDateFormat:@"MMMM dd, yyyy h:mm:ss a zzzz"];
     
     NSDate *now = [NSDate date];
     
